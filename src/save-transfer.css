@@ -1,0 +1,7 @@
+.save-transfer{width:min(680px,calc(100vw - 48px));max-height:calc(100vh - 48px);overflow:auto;border:1px solid #cedbca;border-radius:22px;padding:26px;background:#f3f1e7;color:var(--ink);box-shadow:0 20px 100px #08281d66}
+.save-transfer::backdrop{background:#082e2999;backdrop-filter:blur(7px)}
+.save-transfer-heading{display:flex;align-items:center;justify-content:space-between;gap:20px}.save-transfer-heading h2{font:24px PondSerif,serif;font-weight:400;letter-spacing:2px;margin:0}.save-transfer-heading button{font-size:25px;background:#e1e7d9;color:#56745b}
+.save-transfer-note{font-size:12px;line-height:1.85;color:#71846b;margin:18px 0}.save-transfer>label{display:block;font-size:11px;color:#668262;margin:0 0 9px}
+.save-transfer textarea{display:block;resize:vertical;width:100%;height:min(310px,40vh);min-height:160px;padding:13px 15px;border:1px solid #c9d5c0;border-radius:12px;background:#fffaf0;color:#31553f;font:11px/1.65 Consolas,'Microsoft YaHei',monospace;white-space:pre;overflow:auto}.save-transfer textarea:focus-visible{outline:2px solid #759369;outline-offset:3px}
+.save-transfer-actions{display:flex;gap:10px;margin-top:18px}.save-transfer-actions button{padding:11px 18px;border:1px solid #c5d2bc;border-radius:10px;font-size:12px;color:#4b7052;background:#e8eddf}.save-transfer-actions .save-transfer-primary{background:#446b51;border-color:#446b51;color:#f4f2e3}
+.save-transfer-status{min-height:20px;margin:13px 0 0;font-size:11px;line-height:1.8;color:#607c57}

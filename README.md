@@ -37,6 +37,27 @@
 
 ## 发布范围与反馈
 
-本仓库提供使用说明和预览图，编译后的壁纸包放在 Release 附件中；本次未公开完整开发源码，也未为原创部分授予开源许可证。第三方组件声明见 [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt)。
+本仓库的 `main` 分支提供池塘源码、使用说明和预览图，编译后的壁纸包放在 Release 附件中。原创部分尚未附开源许可证；第三方组件声明见 [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt)。
 
 遇到问题可在 [Issues](https://github.com/wushiguize/seedfish-pond/issues) 提交 Windows / Lively 版本、操作步骤与截图。分享时优先发送上面的发布页，方便接收者下载正确的包。
+
+## 从源码运行
+
+需要 **Node.js 22.12 或更高版本**及 npm。获取 `main` 分支源码，在项目目录运行：
+
+```sh
+npm ci
+npm run dev
+```
+
+打开 [本地池塘预览](http://127.0.0.1:5173/pond.html)。构建、运行测试和生成壁纸包的命令分别为：
+
+```sh
+npm run build
+npm test
+npm run package:wallpaper
+```
+
+在 Windows 上生成的 Lively 壁纸包位于 `output/seedfish-lively.zip`，可按上面的桌面安装步骤导入。ZIP 打包使用 Windows PowerShell；其他系统会生成 `output/wallpaper` 文件夹。仅使用现成壁纸的人直接下载 Release 附件即可。
+
+本次源码补充位于 `main` 分支；`v0.1.0-beta.1` 标签仍保留首次发布时的仓库快照，该 Release 自动生成的 `Source code` 不包含这次补充。获取最新源码请使用仓库的 **Code → Download ZIP** 或克隆 `main` 分支。

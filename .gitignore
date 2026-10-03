@@ -1,8 +1,10 @@
+node_modules/
+dist/
+output/
+runtime/
 *.zip
 *.log
 .env*
-output/
-runtime/
 *save*.json
 Thumbs.db
 .DS_Store
