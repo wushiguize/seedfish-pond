@@ -1,0 +1,8 @@
+*.zip
+*.log
+.env*
+output/
+runtime/
+*save*.json
+Thumbs.db
+.DS_Store
